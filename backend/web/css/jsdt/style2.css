@@ -1,0 +1,67 @@
+.search-form input.but,
+.search-form a,
+.search-form a:visited,
+.search-form a:hover {
+    display: inline;
+    width: 60px;
+    height: 28px;
+    float: left;
+    line-height: 30px;
+    margin-right: 5px;
+    background: #6d9be2;
+    border: 0px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+}
+.search-form input.but.execl,
+.search-form a:visited.execl,
+.search-form a:hover.execl {
+    width: 120px;
+}
+.search-form a.gaoji,
+.search-form a.gaoji:visited,
+.search-form a.gaoji:hover {
+    display: block;
+    width: 80px;
+    height: 28px;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    background: #6d9be2;
+    text-align: center;
+    line-height: 30px;
+    left: 845px;
+    border: 0px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.daily-btn button {
+    display: inline;
+    width: 60px;
+    height: 30px;
+    overflow: hidden;
+    float: left;
+    margin-right: 20px;
+    text-align: center;
+    line-height: 34px;
+    background: #6d9be2;
+    color: #fff;
+    font-size: 14px;
+    border: 0px;
+    cursor: pointer;
+}
+.field-jcrz-pzjcy span {
+    background: #fff;
+    height: 47px;
+    font-size: 14px;
+    font-weight: normal;
+    top: 200px;
+}
+
+.daily-table table td input#jcrz-jcrq{
+    width: 100px;
+    background: url("../../image/jsdt/input_date.jpg") 75px 1px no-repeat;
+}

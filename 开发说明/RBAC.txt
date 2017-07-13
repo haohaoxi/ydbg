@@ -1,0 +1,71 @@
+默认账户
+admin   admin888 //超级管理员
+cuijun  cuijun
+
+权限表结构
+
+后台菜单表（菜单表和权限节点表为一个表）
+CREATE TABLE `menu` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` char(200) NOT NULL,
+  `order` int(11) NOT NULL DEFAULT '0',
+  `status` tinyint(1) NOT NULL DEFAULT '1',
+  `class` varchar(500) DEFAULT NULL,
+  `module` char(100) NOT NULL,
+  `controller` char(100) NOT NULL,
+  `action` char(100) NOT NULL,
+  `parent_id` int(11) NOT NULL DEFAULT '0' COMMENT '父级id',
+  `is_show` tinyint(1) NOT NULL DEFAULT '1' COMMENT '菜单是否显示',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 COMMENT='菜单表';
+
+角色表
+CREATE TABLE `role` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` char(200) NOT NULL COMMENT '角色名称',
+  `order` int(10) NOT NULL DEFAULT '0' COMMENT '排序',
+  `parent_id` int(10) NOT NULL DEFAULT '0' COMMENT '父角色id 默认0 表示顶级',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COMMENT='角色表';
+
+角色绑定的菜单表
+CREATE TABLE `role_menu` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `role_id` int(11) NOT NULL DEFAULT '0' COMMENT '角色id',
+  `menu_id` int(11) NOT NULL DEFAULT '0' COMMENT '菜单id',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+
+
+角色绑定的用户表
+CREATE TABLE `role_user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL DEFAULT '0' COMMENT '用户id',
+  `role_id` int(11) NOT NULL DEFAULT '0' COMMENT '角色id',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+实现思路
+1.所有模块控制器都继承 backend\controllers\CommonController 公共控制器
+2.设置配置项 'super_admin' =>['admin'] 这个用户 为超级管理员 不进行权限判断 拥有最高权限 可配置多个
+3.在公共控制器中利用 beforeAction 进行全局权限判断 代码如下
+    protected function hasPermission(){
+        if($this->_isPermission === false) return true; //为开启权限判断的话则不进行验证权限
+        $super_admin = \Yii::$app->params['super_admin']; //获取超级用户账号
+        $username = Yii::$app->user->identity->username; //获取登录账号
+        if(in_array($username,$super_admin)) return true; //如果是超级账户的话 则免除验证 拥有最高权限
+        $moduleId = Yii::$app->controller->module->id; //获取模块id
+        $controllerId =  Yii::$app->controller->id; //获取控制器id
+        $actionId =  Yii::$app->controller->action->id; //获取方法id
+        $userId = Yii::$app->user->identity->id; //获取用户id
+        $query = new \yii\db\Query();
+        $role_user = $query->select('role_id')->from("{{role_user}}")->where(['user_id'=>$userId])->one();
+        $role_id = $role_user['role_id'];//获取角色id
+        $menu = $query->select('id')->from("{{menu}}")->where(['module'=>$moduleId,'controller'=>$controllerId,'action'=>$actionId,'status'=>1])->one(); //获取当前方法的验证权限记录id
+        $menu_id = $menu['id'];
+        if(!$query->select('id')->from("{{role_menu}}")->where(['role_id'=>$role_id,'menu_id'=>$menu_id])->one()){ //检查用户是否拥有该权限的id
+            throw new NotFoundHttpException('您没有使用该功能的权限.'.$moduleId.'-'.$controllerId.'-'.$actionId);
+        }
+        return true;
+    }
+4.在控制器属性里面可设置属性 _isPermission = false 从而不进行权限判断

@@ -1,0 +1,67 @@
+.basic .top {
+  padding: 25px 0;
+  clear: both;
+  height: 190px;
+}
+.basic .top li {
+  float: left;
+  height: 196px;
+  text-align: center;
+  width: 30%;
+}
+.basic .top li .pic {
+  border: none;
+  cursor: pointer;
+}
+.basic .top li .file {
+  display: none;
+}
+.basic .top li span {
+  display: block;
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 30px;
+}
+.basic .top li span i {
+  font-style: normal;
+  color: #2658a5;
+  text-decoration: underline;
+}
+.default-table tr td .view {
+  background: #f7f7f7;
+  color: #929292;
+  border: 1px solid #dedede;
+}
+.default-table tr td .q.date.view {
+  background: #f7f7f7 url("../images/input_date2.jpg") right center no-repeat;
+}
+.default-table tr td .q.date {
+  background: url("../images/input_date2.jpg") right center no-repeat;
+}
+.default-table tr td .area {
+  border: 1px solid #7f9db9;
+}
+.default-table .progress {
+  width: 180px;
+  height: 16px;
+  margin-left: 32px;
+  border: 1px solid #dedddd;
+  text-align: left;
+}
+.default-table .progress span {
+  width: 40%;
+  background: red;
+  height: 16px;
+  display: inline-block;
+}
+.default-table .time {
+  text-align: left;
+  margin-left: 32px;
+}
+.xinqi-page a.on {
+  background: #4676bf;
+}
+.xinqi-page a.back {
+  background: #6d9be2;
+  color: #fff;
+}

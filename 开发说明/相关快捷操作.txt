@@ -1,0 +1,3 @@
+菜单相关
+$menu = functions::list_to_tree(Menu::get_menus(),'id','parent_id','_child',0); //获取菜单数据 数组形式
+$menu = new MenuTree('',array('id','parent_id','name','fullname')); //获取菜单数据 树形结构

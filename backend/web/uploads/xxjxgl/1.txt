@@ -1,0 +1,14 @@
+public function actionIndex()
+    {
+        $model = new Count();
+        $data = $model->find()->asArray()->all();
+
+        //批量更新
+        foreach($data as $key=> $val){
+            Count::updateAll(['content_amount' => rand(1,100),'comment_amount'=> rand(1,100),'browse_amount'=>rand(1,100)],['id' => $val['id']]);
+        }
+        $data = $model->find()->asArray()->all();
+
+        echo '<pre>';
+        print_r($data);
+    }

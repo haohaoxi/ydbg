@@ -1,0 +1,296 @@
+/*首页*/
+.index-search {
+	height: 28px;
+	overflow: hidden;
+	span {
+		font-size: 14px;
+		display: inline;
+		float: left;
+		margin-right: 5px;
+		line-height: 28px;
+	}
+	input.q {
+		display: inline;
+		float: left;
+		width: 120px;
+		height: 26px;
+		padding: 0px;
+		margin: 0px;
+		padding: 0px 10px;
+		border: 1px solid #ddd;
+		margin-right: 5px;
+		line-height: 26px;
+		&.date {
+			width: 80px;
+			background: url("../images/input_date.jpg") 73px 1px no-repeat;
+		}
+	}
+	input.but,a,a:visited,a:hover {
+		display: inline;
+		width: 60px;
+		height: 28px;
+		float: left;
+		line-height: 30px;
+		margin-right: 5px;
+		background: #6d9be2;
+		border: 0px;
+		text-align: center;
+		color: #fff;
+		cursor: pointer;
+		font-size: 14px;
+		&.execl {
+			width: 120px;
+		}
+	}
+}
+.index-table {
+	width: 98%;
+	margin-top: 20px;
+	background: #dedede;
+	tr {
+		th {
+			background: #ecf1f7;
+			font-size: 16px;
+			font-weight: normal;
+			
+		}
+		td {
+			background: #ffffff;
+			height: 50px;
+			text-align: center;
+			font-size: 16px;
+			a {
+				display: block;
+				width: 100%;
+				height: 50px;
+				line-height: 50px;
+				font-size: 16px;
+			}
+		}
+		.yellow {
+			color: #f49c10;
+			a {
+				color: #f49c10;
+			}
+		}
+		.red {
+			color: #f00;
+			a {
+				color: #f00;
+			}
+		}
+	}
+}
+
+/*羁押信息*/
+.jiya-search {
+	height: 66px;
+	overflow: hidden;
+	span {
+		display: inline;
+		height: 40px;
+		line-height: 26px;
+		float: left;
+		font-size: 14px;
+		margin-right: 10px;
+	}
+	input.q {
+		width: 200px;
+		padding: 0px 10px;
+		float: left;
+		height: 24px;
+		border: 1px solid #7f9db9;
+		margin-right: 10px;
+		line-height: 24px;
+		&.date {
+			width: 120px;
+			background: url("../images/input_date.jpg") 115px 0px no-repeat;
+		}
+	}
+	select {
+		width: 200px;
+		float: left;
+		margin-right: 10px;
+	}
+	input.but {
+		display: inline;
+		width: 60px;
+		height: 26px;
+		float: left;
+		margin-right: 10px;
+		background: #6d9be2;
+		border: 0px;
+		line-height: 28px;
+		font-size: 14px;
+		color: #fff;
+		cursor: pointer;
+	}
+	a,a:visited,a:hover {
+		display: inline;
+		width: 60px;
+		height: 26px;
+		float: left;
+		margin-right: 10px;
+		background: #6d9be2;
+		border: 0px;
+		line-height: 28px;
+		font-size: 14px;
+		color: #fff;
+		cursor: pointer;
+		text-align: center;
+		&.execl {
+			width: 112px;
+		}
+	}
+}
+.jiya-overdue table tr td {
+	color: #ff7800;
+}
+.jiya-warning table tr td {
+	color: #ff4242;
+}
+
+.jiya-tab {
+	width: 98%;
+	height: 27px;
+	border-bottom: 1px solid #dcdcdc;
+	a,a:visited,a:hover {
+		display: block;
+		width: 8.2%;
+		height: 24px;
+		overflow: hidden;
+		float: left;
+		text-align: center;
+		position: relative;
+		zoom: 1;
+		border-top: 2px solid #fff;
+		line-height: 26px;
+		z-index: 9;
+		&.active {
+			border-top: 2px solid #4676bf;
+			border-left: 1px solid #dcdcdc;
+			border-right: 1px solid #dcdcdc;
+		}
+	}
+}
+
+.jiya_bott{
+	position: relative;
+}
+.jiya-view-right {
+  position: absolute;
+  right: 20px;
+  top: 0px;
+  input,a,a:visited,a:hover {
+    display: inline;
+    width: 60px;
+    height: 28px;
+    overflow: hidden;
+    float: left;
+    line-height: 30px;
+    margin-right: 5px;
+    background: #6d9be2;
+    border: 0px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0px;
+  }
+}
+
+.aj-table{
+	background: none;
+}
+
+.aj_page{
+	margin-top: 20px;
+	a,a:visited,a:hover  {
+		background: #6d9be2;
+		color:#fff;
+		display: inline-block;
+		width: 60px;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		font-size: 15px;
+	}
+}
+
+.default-table{
+	tr{
+		td{
+			.date{
+				background:url("../images/input_date2.jpg") right center no-repeat;
+			}
+			.area{
+				width: 68%;
+				border:1px solid #7f9db9;
+			}
+	   		.select {
+	   			width: 65%;
+	   		}
+		}
+	}
+	.progress{
+		width: 180px;
+		height: 16px;
+		margin-left: 32px;
+		border:1px solid #dedddd;
+		text-align: left;
+		_margin-left:-15px;
+		span{
+			width: 40%;
+			background: red;
+			height: 16px;
+			display: inline-block;
+		}
+	}	
+	.time{
+		text-align: left;
+		margin-left: 32px;
+		_margin-left:10px;
+	}
+}
+.xinqi-page{
+	a.on{
+		background: #4676bf;
+	}
+	a.back{
+		background: #6d9be2;
+		color: #fff;
+
+	}
+}
+
+.basic{
+	.top{
+		padding: 25px 0;
+		clear: both;
+		height:190px;
+	   li{
+		  float: left;
+		  height: 196px;
+		  text-align: center;
+		  width: 30%;
+		  .pic{
+			  border:none;
+			  cursor: pointer;
+		    }
+		  .file{
+			  display: none;
+		    }
+		  span{
+			  display: block;
+			  font-size: 14px;
+			  cursor: pointer;
+			  line-height: 30px;
+			  i{
+				  font-style: normal;
+				  color: #2658a5;
+				  text-decoration: underline;
+			    }
+		    }
+	    }
+	}
+}

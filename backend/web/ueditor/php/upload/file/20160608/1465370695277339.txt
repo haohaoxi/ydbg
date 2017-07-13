@@ -1,0 +1,32 @@
+#127.0.0.1     www.haoling.com
+#127.0.0.1	  www.haoling_q.com
+#127.0.0.1     www.bendihaoling.com
+
+#127.0.0.1 www.think.com
+
+#127.0.0.1 www.phpcms.com
+
+#江苏本地
+#127.0.0.1 jiangsu.china.com.cn
+
+福建
+#121.199.76.11 fj.china.com.cn #后台服务器 cuijun chinajs123
+
+福建测试服
+115.29.170.176   fj.china.com.cn  fjadmin chinajs123 [(*)][|]
+
+#测试服山东  sdzgw 	  chinajs123  1
+#115.29.170.176 sd.china.com.cn    
+
+#山东后台服务器
+#112.124.55.122 sd.china.com.cn  #cuijun   chinasd123   #http://sd.china.com.cn/zgwddr.php   
+
+#江苏线上
+120.55.117.222 jiangsu.china.com.cn cuijun_caiji  chinajs123
+
+######测试服务器#############	
+#115.29.170.176  jiangsu.china.com.cn chinajs     chinajs123 
+
+
+#懒人帮 http://www.jsnews.net.cn/    后台账号:chinajs 密码:chinajs123
+#115.29.170.176 www.jsnews.net.cn  

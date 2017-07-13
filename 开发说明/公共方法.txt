@@ -1,0 +1,8 @@
+backend\functions目录为公共目录 目前仅存放了 functions.php文件 为公共方法文件
+可重用的方法尽量放在公共文件里面 如加密/解密 上传文件 遍历等操作
+
+公共接口文件backend\functions\api.php
+
+公共消息方法
+1.use backend\modules\message\models\Message;
+2.Message::sendMsg('发起工作',Yii::$app->user->identity->username.'发起了'.$model->p_title.'工作',$model->p_y_slr,['personwork/personwork/index','menutype'=>1]);

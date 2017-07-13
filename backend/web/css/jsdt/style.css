@@ -1,0 +1,530 @@
+/*首页*/
+.index-search {
+  height: 28px;
+  overflow: hidden;
+}
+.index-search span {
+  font-size: 14px;
+  display: inline;
+  float: left;
+  margin-right: 5px;
+  line-height: 28px;
+}
+.index-search input.q {
+  display: inline;
+  float: left;
+  width: 120px;
+  height: 26px;
+  padding: 0px;
+  margin: 0px;
+  padding: 0px 10px;
+  border: 1px solid #ddd;
+  margin-right: 5px;
+  line-height: 26px;
+}
+.index-search input.q.date {
+  width: 80px;
+  background: url("../../image/jsdt/input_date.jpg") 73px 1px no-repeat;
+}
+.aj_page input.but,
+.aj_page a,
+.index-search a:visited,
+.aj_page a:hover {
+    display: inline;
+    width: 60px;
+    height: 28px;
+    float: left;
+    line-height: 30px;
+    margin-right: 5px;
+    background: #6d9be2;
+    border: 0px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.index-search input.but,
+.index-search a,
+.index-search a:visited,
+.index-search a:hover {
+  display: inline;
+  width: 60px;
+  height: 28px;
+  float: left;
+  line-height: 30px;
+  margin-right: 5px;
+  background: #6d9be2;
+  border: 0px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+.index-search input.but.execl,
+.index-search a.execl,
+.index-search a:visited.execl,
+.index-search a:hover.execl {
+  width: 120px;
+}
+.index-table {
+  width: 98%;
+  margin-top: 20px;
+  background: #dedede;
+}
+.index-table tr th {
+  background: #ecf1f7;
+  font-size: 16px;
+  font-weight: normal;
+}
+.index-table tr td {
+  background: #ffffff;
+  height: 50px;
+  text-align: center;
+  font-size: 16px;
+}
+.index-table tr td a {
+  display: block;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+}
+.index-table tr .yellow {
+  color: #f49c10;
+}
+.index-table tr .yellow a {
+  color: #f49c10;
+}
+.index-table tr .red {
+  color: #f00;
+}
+.index-table tr .red a {
+  color: #f00;
+}
+/*羁押信息*/
+.jiya-search {
+  height: 66px;
+  overflow: hidden;
+}
+.jiya-search span {
+  display: inline;
+  height: 40px;
+  line-height: 26px;
+  float: left;
+  font-size: 14px;
+  margin-right: 10px;
+}
+.jiya-search input.q {
+  width: 200px;
+  padding: 0px 10px;
+  float: left;
+  height: 24px;
+  border: 1px solid #7f9db9;
+  margin-right: 10px;
+  line-height: 24px;
+}
+.jiya-search input.q.date {
+  width: 120px;
+  background: url("../../image/jsdt/input_date.jpg") 115px 0px no-repeat;
+}
+.jiya-search select {
+  width: 200px;
+  float: left;
+  margin-right: 10px;
+  height: 24px;
+}
+.jiya-search input.but {
+  display: inline;
+  width: 60px;
+  height: 26px;
+  float: left;
+  margin-right: 10px;
+  background: #6d9be2;
+  border: 0px;
+  line-height: 28px;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+}
+.jiya-search a,
+.jiya-search a:visited,
+.jiya-search a:hover {
+  display: inline;
+  width: 60px;
+  height: 26px;
+  float: left;
+  margin-right: 10px;
+  background: #6d9be2;
+  border: 0px;
+  line-height: 28px;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+}
+.jiya-search a.execl,
+.jiya-search a:visited.execl,
+.jiya-search a:hover.execl {
+  width: 112px;
+}
+.jiya-overdue table tr td {
+  color: #ff7800;
+}
+.jiya-warning table tr td {
+  color: #ff4242;
+}
+.jiya-tab {
+  width: 98%;
+  height: 27px;
+  border-bottom: 1px solid #dcdcdc;
+}
+.jiya-tab a,
+.jiya-tab a:visited,
+.jiya-tab a:hover {
+  display: block;
+  width: 8.2%;
+  height: 24px;
+  overflow: hidden;
+  float: left;
+  text-align: center;
+  position: relative;
+  zoom: 1;
+  border-top: 2px solid #fff;
+  line-height: 26px;
+  z-index: 9;
+}
+.jiya-tab a.active,
+.jiya-tab a:visited.active,
+.jiya-tab a:hover.active {
+  border-top: 2px solid #4676bf;
+  border-left: 1px solid #dcdcdc;
+  border-right: 1px solid #dcdcdc;
+}
+.jiya_bott {
+  position: relative;
+}
+.jiya-view-right {
+  position: absolute;
+  right: 20px;
+  top: 0px;
+}
+.jiya-view-right input,
+.jiya-view-right a,
+.jiya-view-right a:visited,
+.jiya-view-right a:hover {
+  display: inline;
+  width: 60px;
+  height: 28px;
+  overflow: hidden;
+  float: left;
+  line-height: 30px;
+  margin-right: 5px;
+  background: #6d9be2;
+  border: 0px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0px;
+}
+.aj-table {
+  background: none;
+}
+.aj_page {
+  margin-top: 20px;
+}
+.aj_page a,
+.aj_page a:visited,
+.aj_page a:hover {
+  background: #6d9be2;
+  color: #fff;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 15px;
+}
+.default-table tr td .date {
+  background: url("../../image/jsdt/input_date2.jpg") right center no-repeat;
+}
+.default-table tr td .area {
+  width: 68%;
+  border: 1px solid #7f9db9;
+}
+.default-table tr td .select {
+  width: 65%;
+}
+.default-table .progress {
+  width: 180px;
+  height: 16px;
+  margin-left: 32px;
+  border: 1px solid #dedddd;
+  text-align: left;
+  _margin-left: -15px;
+}
+.default-table .progress span {
+  width: 40%;
+  background: red;
+  height: 16px;
+  display: inline-block;
+}
+.default-table .time {
+  text-align: left;
+  margin-left: 32px;
+  _margin-left: 10px;
+}
+.xinqi-page a.on {
+  background: #4676bf;
+}
+.xinqi-page a.back {
+  background: #6d9be2;
+  color: #fff;
+}
+.basic .top {
+  padding: 25px 0;
+  clear: both;
+  height: 190px;
+}
+.basic .top li {
+  float: left;
+  height: 196px;
+  text-align: center;
+  width: 30%;
+}
+.basic .top li .pic {
+  border: none;
+  cursor: pointer;
+}
+.basic .top li .file {
+  display: none;
+}
+.basic .top li span {
+  display: block;
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 30px;
+}
+.basic .top li span i {
+  font-style: normal;
+  color: #2658a5;
+  text-decoration: underline;
+}
+.has-success .help-block,
+.has-success .control-label,
+.has-success .radio,
+.has-success .checkbox,
+.has-success .radio-inline,
+.has-success .checkbox-inline,
+.has-success.radio label,
+.has-success.checkbox label,
+.has-success.radio-inline label,
+.has-success.checkbox-inline label {
+    color: #3c763d;
+}
+.has-success .form-control {
+    border-color: #3c763d;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+.has-success .form-control:focus {
+    border-color: #2b542c;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #67b168;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #67b168;
+}
+.has-success .input-group-addon {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #3c763d;
+}
+.has-success .form-control-feedback {
+    color: #3c763d;
+}
+.has-warning .help-block,
+.has-warning .control-label,
+.has-warning .radio,
+.has-warning .checkbox,
+.has-warning .radio-inline,
+.has-warning .checkbox-inline,
+.has-warning.radio label,
+.has-warning.checkbox label,
+.has-warning.radio-inline label,
+.has-warning.checkbox-inline label {
+    color: #8a6d3b;
+}
+.has-warning .form-control {
+    border-color: #8a6d3b;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+.has-warning .form-control:focus {
+    border-color: #66512c;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #c0a16b;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #c0a16b;
+}
+.has-warning .input-group-addon {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #8a6d3b;
+}
+.has-warning .form-control-feedback {
+    color: #8a6d3b;
+}
+.has-error .help-block,
+.has-error .control-label,
+.has-error .radio,
+.has-error input,
+.has-error .checkbox,
+.has-error .radio-inline,
+.has-error .checkbox-inline,
+.has-error.radio label,
+.has-error.checkbox label,
+.has-error.radio-inline label,
+.has-error.checkbox-inline label {
+    color: #a94442;
+}
+.default-table tr td .has-error .q {
+    border-color: #a94442;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+.has-error .q:focus {
+    border-color: #843534;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+}
+
+
+.has-error .input-group-addon {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #a94442;
+}
+.has-error .form-control-feedback {
+    color: #a94442;
+}
+.help-block{
+    color: red;
+}
+.user-add-title {
+    font-size: 15px;
+    font-weight: bold;
+    color: #bf4646;
+}
+.user-add-table {
+    width: 50%;
+    background: #808080;
+    text-align: center;
+    float: left;
+}
+.user-add-table tr th {
+    text-align: left;
+    background: #8fb8f6;
+    color: #fff;
+    border-top: 0;
+    margin-bottom: 10px;
+}
+.user-add-table tr td i {
+    color: #bf4646;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+}
+.user-add-table tr td input.text {
+   /* border: 0px;*/
+    font-size: 14px;
+    color: #333333;
+    width: 98%;
+}
+.user-add-table tr td input.text.view {
+    background: none;
+    color: #6d6d6d;
+}
+.user-add-table tr td select {
+    width: 98%;
+    border: 0px;
+    color: #333333;
+}
+.user-add-table tr td .area {
+    width: 98%;
+    text-align: left;
+    height: 100px;
+    float: left;
+    border: 0;
+}
+.user-add-table tr td .area.view {
+    background: #fff;
+}
+.user-add-table tr td.check_box {
+    text-align: left;
+    padding-left: 10px;
+}
+.user-add-table tr td.check_box label {
+    float: left;
+    width: 120px;
+    margin: 5px 0;
+}
+.user-add-table tr td.check_box label.gl {
+    width: 180px;
+}
+.user-add-table tr td.view {
+    background: #fff;
+    color: #6d6d6d;
+}
+.user-add-pic {
+    float: left;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.user-add-pic .pic {
+    border: none;
+    cursor: pointer;
+    width: 119px;
+    height: 166px;
+}
+.user-add-pic .file {
+    display: none;
+}
+.user-add-pic span {
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+    line-height: 25px;
+    color: #2658a5;
+    text-align: center;
+}
+.user-add-pic span i {
+    font-style: normal;
+    display: block;
+    width: 100px;
+    color: #000;
+}
+.user-btn {
+    text-align: center;
+    padding: 10px;
+    width: 50%;
+}
+.user-btn a,
+.user-btn a:hover,
+.user-btn a:visited {
+    color: #fff;
+    font-size: 14px;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 10px;
+}
+.user-btn .back {
+    background: #6d9be2;
+}
+.user-btn .save {
+    background: #bf4646;
+}
+.jiya-search input.q {
+    line-height: 24px;
+}
+.empty{
+    text-align: center;
+}

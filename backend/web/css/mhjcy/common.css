@@ -1,0 +1,583 @@
+@charset "utf-8";
+/* CSS Document */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+}
+:focus {
+  outline: 0;
+}
+html {
+  height: 100%;
+}
+body {
+  font-family: "微软雅黑", "宋体", Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  color: #333;
+  height: 100%;
+}
+body,
+td,
+div,
+p,
+br,
+b,
+strong,
+i,
+em,
+a,
+pre,
+img,
+dl,
+dt,
+dd,
+li,
+form,
+th,
+tr,
+span {
+  font-family: "微软雅黑", "宋体", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+ol,
+ul {
+  list-style: none;
+}
+ul li {
+  overflow: hidden;
+}
+a,
+a:visited {
+  color: #333;
+  text-decoration: none;
+}
+a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+.box {
+  width: 1000px;
+  margin: 0px auto;
+}
+.clr {
+  clear: both;
+  overflow: hidden;
+  height: 1px;
+  margin-top: -1px;
+}
+.hid {
+  display: none;
+}
+.margin_ten {
+  margin-top: 10px;
+}
+.margin_two {
+  margin-top: 20px;
+}
+.over_hid {
+  overflow: hidden;
+}
+.songti {
+  font-family: "宋体", Arial, Helvetica, sans-serif;
+}
+.en {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#box-body {
+  background: url("../../image/mhjcy/body.jpg") no-repeat top left;
+  width: auto !important;
+  width: 1200px;
+  min-width: 1200px;
+}
+#box-body .box-top {
+  height: 74px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 8;
+}
+#box-body .box-left {
+  width: 250px;
+  position: absolute;
+  left: 0px;
+  top: 74px;
+  z-index: 8;
+}
+#box-body .box-iframe {
+  padding-top: 74px;
+  padding-left: 250px;
+}
+.box-body {
+  background: #dfdfdf;
+}
+.top-box {
+  width: auto !important;
+  width: 1200px;
+  min-width: 1200px;
+  height: 74px;
+  overflow: hidden;
+  position: relative;
+  zoom: 1;
+}
+.top-box h1 {
+  display: block;
+  width: 402px;
+  height: 59px;
+  position: absolute;
+  left: 24px;
+  top: 8px;
+}
+.top-box .top-mesg {
+  width: 220px;
+  height: 34px;
+  position: absolute;
+  left: 450px;
+  top: 19px;
+}
+.top-box .top-mesg a {
+  display: inline-block;
+  width: 43px;
+  height: 34px;
+  float: left;
+  margin-left: 20px;
+  position: relative;
+  zoom: 1;
+  background: url("../../image/mhjcy/system_top_but.png") no-repeat;
+  padding-left: 47px;
+  line-height: 34px;
+  font-size: 14px;
+  color: #fff;
+}
+.top-box .top-mesg a.top-message i {
+  display: block;
+  width: 21px;
+  height: 16px;
+  position: absolute;
+  left: 16px;
+  top: 9px;
+  background: url("../../image/mhjcy/icons/message.png") no-repeat;
+}
+.top-box .top-mesg a.top-message span {
+  display: block;
+  width: 17px;
+  height: 16px;
+  position: absolute;
+  left: 29px;
+  top: 0px;
+  background: url("../../image/mhjcy/icons/manage_num.png") no-repeat;
+  text-align: center;
+  line-height: 16px;
+  color: #fff;
+}
+.top-box .top-mesg a.top-manage i {
+  display: block;
+  width: 21px;
+  height: 19px;
+  position: absolute;
+  left: 16px;
+  top: 7px;
+  background: url("../../image/mhjcy/icons/manage.png") no-repeat;
+}
+.top-box .top-user {
+  width: 138px;
+  height: 33px;
+  padding-left: 55px;
+  padding-bottom: 1px;
+  padding-top: 6px;
+  background: url("../../image/mhjcy/system_top_user.png") no-repeat right 6px;
+  position: absolute;
+  right: 371px;
+  top: 17px;
+  line-height: 33px;
+  color: #fff;
+  font-size: 14px;
+}
+.top-box .top-link {
+  width: 180px;
+  height: 33px;
+  position: absolute;
+  right: 168px;
+  top: 23px;
+  background: url("../../image/mhjcy/system_top_link.png") no-repeat;
+  text-align: center;
+  line-height: 28px;
+  font-size: 16px;
+  color: #fff;
+}
+.top-box .top-link a {
+  font-size: 16px;
+  color: #fff;
+  line-height: 33px;
+}
+.top-box .top-link span {
+  padding: 0px 15px;
+}
+.top-box .top_out {
+  width: 97px;
+  height: 33px;
+  position: absolute;
+  right: 50px;
+  top: 23px;
+  background: url("../../image/mhjcy/system_top_out.png") no-repeat;
+}
+.top-box .top_out a {
+  display: block;
+  width: 44px;
+  height: 33px;
+  color: #fff;
+  font-size: 16px;
+  padding-left: 38px;
+  line-height: 33px;
+  background: url("../../image/mhjcy/icons/close.png") no-repeat 18px 12px;
+}
+.left-menu {
+  width: 220px;
+  padding: 1px 0px;
+  margin: 0px auto;
+  overflow-x: hidden;
+}
+.left-menu .menu-home a {
+  display: block;
+  height: 40px;
+  position: relative;
+  zoom: 1;
+  background: url("../../image/mhjcy/system_menu_link.png") no-repeat;
+  padding-left: 26px;
+  line-height: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+}
+.left-menu .menu-home a i {
+  display: block;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  right: 17px;
+  top: 12px;
+  background: url("../../image/mhjcy/icons/icon_home.png") no-repeat;
+}
+.left-menu .menu-list {
+  margin-top: 8px;
+}
+.left-menu .menu-list .menu-top {
+  height: 40px;
+}
+.left-menu .menu-list .menu-top a {
+  display: block;
+  height: 40px;
+  position: relative;
+  zoom: 1;
+  background: url("../../image/mhjcy/system_menu_link.png") no-repeat;
+}
+.left-menu .menu-list .menu-top a span {
+  display: block;
+  width: 93px;
+  height: 26px;
+  position: absolute;
+  left: 11px;
+  top: 7px;
+  background: url("../../image/mhjcy/system_menu_name.png") no-repeat;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+}
+.left-menu .menu-list .menu-top a i {
+  display: block;
+  width: 8px;
+  height: 12px;
+  background: url("../../image/mhjcy/system_menu_close.png") no-repeat;
+  position: absolute;
+  right: 20px;
+  top: 14px;
+}
+.left-menu .menu-list .menu-top.menu-open a {
+  background: url("../../image/mhjcy/system_menu_top.png") no-repeat;
+}
+.left-menu .menu-list .menu-top.menu-open i {
+  display: block;
+  width: 11px;
+  height: 8px;
+  background: url("../../image/mhjcy/system_menu_open.png") no-repeat;
+  right: 16px;
+  top: 16px;
+}
+.left-menu .menu-list ul {
+  background: url("../../image/mhjcy/system_menu_foot.png") no-repeat bottom;
+  padding-bottom: 10px;
+}
+.left-menu .menu-list ul li {
+  height: 45px;
+}
+.left-menu .menu-list ul li a {
+  display: block;
+  padding-left: 58px;
+  height: 45px;
+  position: relative;
+  zoom: 1;
+  line-height: 45px;
+  font-size: 14px;
+  color: #fff;
+}
+.left-menu .menu-list ul li a.on {
+  background: url("../../image/mhjcy/system_menu_on.png") no-repeat;
+}
+.left-menu .menu-list ul li a i {
+  display: block;
+  width: 22px;
+  height: 21px;
+  position: absolute;
+  left: 22px;
+  top: 13px;
+}
+.left-menu .menu-list ul li a i.left-icon1 {
+  background: url("../../image/mhjcy/icons/icon_1.png") no-repeat;
+}
+.left-menu .menu-list ul li a i.left-icon2 {
+  background: url("../../image/mhjcy/icons/icon_2.png") no-repeat;
+}
+.left-menu .menu-list ul li a i.left-icon3 {
+  background: url("../../image/mhjcy/icons/icon_3.png") no-repeat;
+}
+.left-menu .menu-list ul li a i.left-icon4 {
+  background: url("../../image/mhjcy/icons/icon_4.png") no-repeat;
+}
+.left-menu .menu-list ul li a i.left-icon5 {
+  background: url("../../image/mhjcy/icons/icon_5.png") no-repeat;
+}
+.left-menu .menu-list ul li a i.left-icon6 {
+  background: url("../../image/mhjcy/icons/icon_6.png") no-repeat;
+}
+.left-menu .menu-list ul li a i.left-icon7 {
+  background: url("../../image/mhjcy/icons/icon_7.png") no-repeat;
+}
+.left-menu .menu-list ul li a i.left-icon8 {
+  background: url("../../image/mhjcy/icons/icon_8.png") no-repeat;
+}
+.left-menu .menu-list ul li a i.left-icon9 {
+  background: url("../../image/mhjcy/icons/icon_9.png") no-repeat;
+}
+.left-menu .menu-list ul li a i.left-icon10 {
+  background: url("../../image/mhjcy/icons/icon_10.png") no-repeat;
+}
+.left-menu .menu-list ul li a i.left-icon11 {
+  background: url("../../image/mhjcy/icons/icon_11.png") no-repeat;
+}
+.left-menu .menu-list ul li a i.left-icon12 {
+  background: url("../../image/mhjcy/icons/icon_12.png") no-repeat;
+}
+.left-menu .menu-list ul li a i.left-icon13 {
+  background: url("../../image/mhjcy/icons/icon_13.png") no-repeat;
+}
+.left-menu .menu-list ul li a i.left-icon14 {
+  background: url("../../image/mhjcy/icons/icon_14.png") no-repeat;
+}
+.left-menu .menu-list ul li a i.left-icon15 {
+  background: url("../../image/mhjcy/icons/icon_15.png") no-repeat;
+}
+.left-menu .menu-list ul li a i.left-icon16 {
+  background: url("../../image/mhjcy/icons/icon_16.png") no-repeat;
+}
+.left-menu .menu-list ul li a i.left-icon17 {
+  background: url("../../image/mhjcy/icons/icon_17.png") no-repeat;
+}
+.left-menu .menu-list ul li a i.left-icon18 {
+  background: url("../../image/mhjcy/icons/icon_18.png") no-repeat;
+}
+.left-menu .menu-list ul li a i.left-icon19 {
+  background: url("../../image/mhjcy/icons/icon_19.png") no-repeat;
+}
+.left-menu .menu-list ul li a i.left-icon20 {
+  background: url("../../image/mhjcy/icons/icon_20.png") no-repeat;
+}
+.left-menu .menu-list ul li a i.left-icon21 {
+  background: url("../../image/mhjcy/icons/icon_21.png") no-repeat;
+}
+.left-menu .menu-list ul li a i.left-icon22 {
+  background: url("../../image/mhjcy/icons/icon_22.png") no-repeat;
+}
+.left-menu .menu-list ul li a i.left-icon23 {
+  background: url("../../image/mhjcy/icons/icon_23.png") no-repeat;
+}
+.left-menu .menu-list ul li a i.left-icon24 {
+  background: url("../../image/mhjcy/icons/icon_24.png") no-repeat;
+}
+.left-menu .menu-list ul li a i.left-icon25 {
+  background: url("../../image/mhjcy/icons/icon_25.png") no-repeat;
+}
+.left-menu .menu-list ul li a i.left-icon26 {
+  background: url("../../image/mhjcy/icons/icon_26.png") no-repeat;
+}
+.left-menu .menu-list ul li a i.left-icon27 {
+  background: url("../../image/mhjcy/icons/icon_27.png") no-repeat;
+}
+.today-div {
+  height: 50px;
+  background: url("../../image/mhjcy/box_bg.png") no-repeat #f3f3f3;
+  border-bottom: 1px solid #cbcbcb;
+  padding-left: 66px;
+}
+.today-div h2 {
+  line-height: 50px;
+  font-size: 18px;
+  color: #000;
+  font-weight: normal;
+}
+.today-div a.upload-file {
+  padding-right: 36px;
+  line-height: 50px;
+  font-size: 14px;
+  color: #203351;
+  position: absolute;
+  top: 0px;
+  right: 60px;
+  background: url("../../image/mhjcy/upload_icon.png") no-repeat right center;
+}
+.mbx-menu {
+  height: 50px;
+  border-bottom: 1px solid #cbcbcb;
+  padding-left: 46px;
+  color: #9ea7b3;
+  background: url("../../image/mhjcy/mbx_home.jpg") no-repeat 31px 20px #f3f3f3;
+  position: relative;
+  zoom: 1;
+  font-size: 14px;
+  line-height: 50px;
+  color: #9da7b3;
+}
+.mbx-menu span {
+  padding: 0px 10px;
+}
+.mbx-menu a.home {
+  display: block;
+  width: 12px;
+  height: 10px;
+  position: absolute;
+  left: 31px;
+  top: 20px;
+}
+.mbx-menu a {
+  font-size: 14px;
+  line-height: 50px;
+  color: #9da7b3;
+}
+.mbx-menu a.yulan {
+  display: block;
+  width: 57px;
+  height: 28px;
+  text-align: center;
+  line-height: 28px;
+  color: #fff;
+  font-size: 14px;
+  background: url("../../image/mhjcy/yulan.png") no-repeat;
+  position: absolute;
+  top: 11px;
+  right: 120px;
+}
+.mbx-menu a.yulan.back {
+  right: 24px;
+}
+.mbx-menu a.creat {
+  display: block;
+  width: 83px;
+  height: 28px;
+  text-align: center;
+  line-height: 28px;
+  color: #fff;
+  font-size: 14px;
+  background: url("../../image/mhjcy/creat_index.png") no-repeat;
+  position: absolute;
+  top: 11px;
+  right: 24px;
+}
+.mbx-menu a.print {
+  display: block;
+  width: 80px;
+  height: 28px;
+  text-align: center;
+  line-height: 28px;
+  color: #fff;
+  font-size: 14px;
+  background: #1cb6ae;
+  border-radius: 5px;
+  position: absolute;
+  top: 11px;
+  right: 120px;
+}
+.mbx-menu a.save {
+  display: block;
+  width: 80px;
+  height: 28px;
+  text-align: center;
+  line-height: 28px;
+  color: #fff;
+  font-size: 14px;
+  background: #e45252;
+  border-radius: 5px;
+  position: absolute;
+  top: 11px;
+  right: 24px;
+}

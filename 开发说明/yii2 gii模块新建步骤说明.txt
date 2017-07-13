@@ -1,0 +1,37 @@
+1.先设计好表
+CREATE TABLE `workflow` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` text NOT NULL COMMENT '工作流名称',
+  `order` int(10) NOT NULL DEFAULT '0' COMMENT '排序',
+  `status` tinyint(1) NOT NULL COMMENT '状态 1:开启 0:关闭',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COMMENT='工作流表';
+
+
+2.新建模块
+选择 Module Generator
+Module Class:backend\modules\workflow\Module
+Module ID:workflow
+
+3.在 backend\config\main.php中modules数组下添加以下内容
+'workflow' => [
+            'class' => 'backend\modules\workflow\Module',
+        ],
+
+4.新建模型
+选择Model Generator
+Table Name:workflow
+Model Class:Workflow
+Namespace:backend\modules\workflow\models
+勾选Use Table Prefix
+
+5.新建crud以及模板
+选择CRUD Generator
+Model Class:backend\modules\workflow\models\Workflow
+Search Model Class:backend\modules\workflow\models\WorkflowSearch
+Controller Class:backend\modules\workflow\controllers\WorkflowController
+View Path:D:\wamp2\www\ydbg\backend\modules\workflow\views\workflow
+
+6.删除多余的文件及文件夹
+D:\wamp2\www\ydbg\backend\modules\workflow\controllers\DefaultController.php
+D:\wamp2\www\ydbg\backend\modules\workflow\views\default

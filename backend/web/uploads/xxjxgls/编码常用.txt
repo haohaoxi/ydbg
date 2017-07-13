@@ -1,0 +1,58 @@
+1、头部、功能块注释
+-------------------------------------------------    
+    /**
+     * @function 加载后台菜单
+     * @author Bob
+     * @date 20151125
+     * @param integer $parentid   父菜单ID
+     * @return array 菜单结构数组
+     */
+
+
+2、数据库操作
+     $result=Menu::find()
+            ->where($where)
+            ->select(['id', 'name'])
+            ->orderBy('listorder ASC')
+            ->asArray()
+            ->all();
+
+
+-------------------------------------------------
+3、常用Yii2代码
+\Yii::$app->user->isGuest  //判断用户是否登录
+
+\Yii::$app->user->identity->username;//用户名
+
+Yii::$app->urlManager->createUrl(Yii::$app->params['DefaultAddress']);//生成url
+<?= Html::a('修改',Yii::$app->urlManager->createUrl(['Privilege/privilege/update','id'=>$_GET['id'],'menuid'=>$_GET['menuid']])) ?>
+
+\Yii::$app->user->identity->role_id;//获取登录用户角色
+
+<?= Html::radioList('templateChild',2,['1'=>'是','2'=>'否']) ?>   //生成默认选中的radio
+
+<?php if($type==0):?>
+<?php elseif(type==1):?>
+<?php else: ?>
+<?php endif;?>
+
+\Yii::$app->db->getLastInsertID();//获取最新插入的ID
+
+4、常用配置文件
+return [
+    'components' => [
+        'urlManager' => [
+            'class' => 'yii\web\UrlManager',
+            'enablePrettyUrl' => true,
+            'showScriptName' => false
+        ],
+    ],
+];
+
+//girdview 头部标题不排序
+$dataProvider->setSort([
+                'attributes' => [
+                    []
+                ],
+            ]
+        );
